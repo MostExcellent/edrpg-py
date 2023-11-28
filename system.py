@@ -108,12 +108,8 @@ class System:
         # Generate planets
         for star in self.stars:
             star.generate_planets()
-
-        # Ensure at least one planet is inhabited if system is inhabited
-        if self.inhabited and not any(planet.inhabited for star in self.stars for planet in star.planets):
-            while not any(planet.inhabited for star in self.stars for planet in star.planets):
-                for star in self.stars:
-                    star.generate_planets()
+            if self.inhabited:
+                star.ensure_inhabited_planet()
         
         # Generate society if inhabited
         if self.inhabited:
@@ -204,7 +200,12 @@ class Star:
                 no_planet_count += 1
                 if no_planet_count == 2:
                     break
-            distance += 100
+            distance += 100\
+    
+    def ensure_inhabited_planet(self):
+        if self.inhabited and not any(planet.inhabited for planet in self.planets):
+            while not any(planet.inhabited for planet in self.planets):
+                self.generate_planets()
 
     def generate_planets(self):
         inner_max_distance = 1000 if not self.star_type in rare_table.table else 2000

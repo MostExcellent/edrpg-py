@@ -1,4 +1,4 @@
-Finish weapons after Shotgun
+Add missions other than military
 Finish Rare Weapons
 Implement underslung grenade launcher (SMG)
 implement partner/drones in character creation
@@ -12,12 +12,8 @@ other tables
 system generator
 weapons from expansions
 specials list/dict?
-stars orbiting stars
 
 note:
-
-if outer table is a string, refer to that star's table
-handle ring value in script
 
 for clothes:
 true = Worn

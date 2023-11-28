@@ -1,0 +1,181 @@
+{
+    "Military": [
+      {
+        "id": 1,
+        "name": "Recon",
+        "description": "Scan an installation in enemy territory and return with the information.",
+        "details": {
+          "guards": "Well-protected, with at least as many guard ships as players, possibly more.",
+          "approach": "The enemy might have to be drawn off first to successfully scan the installation."
+        },
+        "location": {
+          "1-4": "Space installation – a small or large space outpost.",
+          "5-9": "Ground-based installation – players might sneak up on foot or using vehicles.",
+          "10": "Deep underground – land ships at least 50km away to avoid detection."
+        },
+        "twist": {
+          "1-3": "Need to enter the installation to see activity.",
+          "4-5": "It’s a trap! The installation is an empty shell with enemy reinforcements.",
+          "6-7": "One of three identical installations across the system, all must be scanned.",
+          "8": "Faulty information on installation’s position, follow a suspicious ship instead.",
+          "9-10": "Owned by the same faction as the player’s employer, seeking classified military secrets."
+        }
+      },
+      {
+        "id": 2,
+        "name": "Disruption at Checkpoint Zulu",
+        "description": "Disrupt the logistical supply to an occupying army.",
+        "details": {
+          "initial": "Destroy and replace the security detail at Checkpoint Zulu.",
+          "secondary": "Attack and disable logistic vessels flying through Checkpoint Zulu."
+        },
+        "location": {
+          "1-6": "Space-based navigational beacon, accessible by ships.",
+          "7-10": "Surface-based railhead installation, transferring supplies to combat vehicles."
+        },
+        "twist": {
+          "1-3": "Also a staging post for troops, full of troop ships.",
+          "4-5": "Non-combatant civilians in the area, avoid war crimes.",
+          "6-8": "Under attack by another force, friend from foe confusion.",
+          "9-10": "Just survived an attack, nearly impossible to penetrate."
+        }
+      },
+      {
+        "id": 3,
+        "name": "Raid",
+        "description": "Destroy a small communications installation with an elite team.",
+        "location": {
+          "1-4": "Small space platform in orbit around a moon.",
+          "5-9": "On the surface of the moon.",
+          "10": "In the center of a populated area."
+        },
+        "twist": {
+          "1-2": "Overrun by Biomods or alien creatures.",
+          "3-5": "Used as a relief shelter, enemy military unit present.",
+          "6-7": "Unmanned, defense program starts lockdown and self-destruct.",
+          "8": "Faulty air supply, causes hypoxia reducing skill levels.",
+          "9-10": "Communications array moved to a different area."
+        }
+      },
+      {
+        "id": 4,
+        "name": "Snatch Squad",
+        "description": "Capture a high-profile political figure from a contested area of a space station.",
+        "location": {
+          "1-4": "Base on the inside of a Coriolis-type operational space station.",
+          "5-9": "Base in an Orbis space station with normal gravity.",
+          "10": "Protagonist in a no gravity area of an outpost/space platform."
+        },
+        "twist": {
+          "1-2": "Enemies within try to kill the agitator during the grab.",
+          "3-4": "Competing team sent by 'The Architect' also after the target.",
+          "5-6": "Agitator replaced with a lookalike.",
+          "7-8": "Local security forces sympathize with the agitator, hindering players.",
+          "9-10": "Target attempts suicide upon capture."
+        }
+      },
+      {
+        "id": 5,
+        "name": "Hostage Release",
+        "description": "Recover hostages and neutralize terrorists in Operation Lame Duck.",
+        "location": {
+          "1-2": "Hostages on a freighter/passenger ship in space.",
+          "3-4": "Ground-based outpost on an airless moon.",
+          "5-6": "Small orbital platform/outpost.",
+          "7-8": "Building on an operational space station.",
+          "9-10": "Ship that has just landed at a space or surface base."
+        },
+        "twist": {
+          "1-2": "Terrorists armed with explosives, rigged to blow.",
+          "3-4": "Terrorists squabble, threatening hostages.",
+          "5-6": "Terrorists disguised among hostages.",
+          "7-8": "Hostage is a military figure willing to trade information.",
+          "9": "Hostage goes into labor.",
+          "10": "Psychotic terrorist tortures and kills hostages."
+        }
+      },
+      {
+        "id": 6,
+        "name": "Defensive Action",
+        "description": "Defend a strategic position from enemy attack.",
+        "location": {
+          "1-3": "Ridge or pass on a rocky or ice world.",
+          "4-6": "On an earth-like or terraformed planet.",
+          "7-9": "Checkpoint in space.",
+          "10": "Capital Class ship or besieged location on it."
+        },
+        "twist": {
+          "1-3": "Indigenous creatures attack the position.",
+          "4-5": "Attack by an elite enemy force, larger than expected.",
+          "6-7": "Base structural issues causing system failures.",
+          "8-9": "Cyber-attack takes control of base defense systems.",
+          "10": "Bribed to abandon the base."
+        }
+      },
+      {
+        "id": 7,
+        "name": "Prisoner of War",
+        "description": "Transfer key military personnel to an allied prison for interrogation.",
+        "transport": {
+          "1-5": "Lakon Type 7",
+          "6-9": "Lakon Type 6",
+          "10": "Lakon Type 9"
+        },
+        "twist": {
+          "1-3": "Prisoners attempt a breakout.",
+          "4-6": "Virus outbreak among prisoners.",
+          "7-9": "Transport ship malfunctions.",
+          "10": "Prison facility taken over by allied forces."
+        }
+      },
+      {
+        "id": 8,
+        "name": "Denial Operations",
+        "description": "Destroy the power supply to enemy’s defensive installations.",
+        "location": {
+          "1-4": "Power supply overground via pylons and transformers.",
+          "5-9": "Power supply underground.",
+          "10": "Nearby generator provides power."
+        },
+        "twist": {
+          "1-3": "Backup generators need disabling.",
+          "4-6": "Installation full of conflict refugees.",
+          "7-9": "Ancient nuclear installation requires careful shutdown.",
+          "10": "Guarded by enemy soldiers in defensive positions."
+        }
+      },
+      {
+        "id": 9,
+        "name": "Main Assault",
+        "description": "Take a key piece of terrain heavily fortified with dug-in positions.",
+        "location": {
+          "1-4": "Defensive hill on an ice world.",
+          "5-8": "Rocky world.",
+          "9-10": "Terraformed world with climate chosen by GM."
+        },
+        "twist": {
+          "1-3": "Enemy includes suicide squads.",
+          "4-6": "Catacombs with indigenous alien creatures.",
+          "7-9": "High metallic content prevents communication.",
+          "10": "All above issues encountered."
+        }
+      },
+      {
+        "id": 10,
+        "name": "Military Transport",
+        "description": "Escort a convoy of ships to a jump point and then to a surface base.",
+        "location": {
+          "1-6": "Mission ends at surface destination.",
+          "7-10": "Requires onward escort of surface convoy to the front line."
+        },
+        "twist": {
+          "1-2": "Mole among crew sabotages convoy.",
+          "3-4": "Captains lead convoy into a trap.",
+          "5-6": "Drop-off point compromised, new coordinates given.",
+          "7-8": "Mechanical breakdown in convoy, decide whether to defend or abandon.",
+          "9-10": "Slave soldiers demand better equipment before fighting."
+        }
+      }
+    ]
+  }
+  

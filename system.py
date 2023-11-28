@@ -200,7 +200,7 @@ class Star:
                 no_planet_count += 1
                 if no_planet_count == 2:
                     break
-            distance += 100\
+            distance += 100
     
     def ensure_inhabited_planet(self):
         if self.inhabited and not any(planet.inhabited for planet in self.planets):

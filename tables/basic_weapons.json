@@ -1,0 +1,132 @@
+{
+    "Auto Pistol": {
+    "Types": ["Autopistol", "Kinetic", "Basic"],
+    "Handed": 1,
+    "Range": {
+        "Short": [6, 5],
+        "Medium": [50, 8],
+        "Long": [100, 14]
+    },
+    "Damage": "1D10",
+    "Special": {
+        "Burst": "2D10"
+    },
+    "Ammo": 3,
+    "Notes": "One Handed, Burst (2D10)",
+    "Cost": 4
+},
+"Laser Pistol": {
+    "Types": ["Laser Pistol", "Energy", "Basic"],
+    "Handed": 1,
+    "Range": {
+        "Short": [10, 4],
+        "Medium": [80, 7],
+        "Long": [120, 11]
+    },
+    "Damage": 8,
+    "Special": null,
+    "Ammo": null,
+    "Notes": "One Handed",
+    "Cost": 3
+},
+"Sub Machinegun": {
+    "Types": ["SMG", "Kinetic", "Basic"],
+    "Handed": 2,
+    "Range": {
+        "Short": [10, 5],
+        "Medium": [60, 8],
+        "Long": [120, 14]
+    },
+    "Damage": "1D10",
+    "Special": {
+        "Burst": "3D10"
+    },
+    "Ammo": 4,
+    "Notes": "Burst (3D10)",
+    "Cost": 9
+},
+"Assault Beamer": {
+    "Types": ["Assault Beamer", "Energy", "Basic"],
+    "Handed": 2,
+    "Range": {
+        "Short": [12, 4],
+        "Medium": [70, 7],
+        "Long": [200, 10]
+    },
+    "Damage": 8,
+    "Special": {
+        "Burst": "20",
+        "Destroy Cover": true,
+        "Divide Fire": true
+    },
+    "Ammo": null,
+    "Notes": "Burst (20), Destroy Cover, Divide Fire",
+    "Cost": 50
+},
+"Shotgun": {
+    "Types": ["Shotgun", "Kinetic", "Basic"],
+    "Handed": 2,
+    "Range": {
+        "Short": [6, 3],
+        "Medium": [12, 7],
+        "Long": [50, 12]
+    },
+    "Damage": {
+        "Short": "3D10",
+        "Medium": "2D10",
+        "Long": "1D10"
+    },
+    "Special": null,
+    "Ammo": 6,
+    "Notes": "Damage is 2D10 at Medium Range, 1D10 at Long Range",
+    "Cost": 5
+},
+"Assault Rifle": {
+    "Types": ["Assault Rifle", "Kinetic", "Basic"],
+    "Handed": 2,
+    "Range": {
+        "Short": [16, 6],
+        "Medium": [100, 7],
+        "Long": [400, 10]
+    },
+    "Damage": "1D10",
+    "Special": {
+        "Burst": "3D10"
+    },
+    "Ammo": 4,
+    "Notes": "Burst (3D10)",
+    "Cost": 15
+},
+"Laser Rifle": {
+    "Types": ["Laser Rifle", "Energy", "Basic"],
+    "Handed": 2,
+    "Range": {
+        "Short": [20, 4],
+        "Medium": [150, 6],
+        "Long": [500, 9]
+    },
+    "Damage": 15,
+    "Special": null,
+    "Ammo": null,
+    "Notes": "Two Handed",
+    "Cost": 40
+},
+"Chain Gun": {
+    "Types": ["Chain Gun", "Kinetic", "Heavy", "Basic"],
+    "Handed": 2,
+    "Range": {
+        "Short": [30, 5],
+        "Medium": [60, 8],
+        "Long": [180, 14]
+    },
+    "Damage": "2D10",
+    "Special": {
+        "Heavy Burst": "6D10",
+        "Destroy Cover": true,
+        "Divide Fire": true
+    },
+    "Ammo": 4,
+    "Notes": "Heavy Burst (6D10), Destroy Cover, Divide Fire",
+    "Cost": 1000
+}
+}

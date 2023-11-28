@@ -1,0 +1,491 @@
+{
+    "Accountant": {
+        "Choices": 1,
+        "Bluff": 10,
+        "Computer": 10,
+        "Culture & Law": 20,
+        "Dodge": 10
+    },
+    "Anarchist": {
+        "Choices": 1,
+        "Dodge": 10,
+        "Fighting": 10,
+        "Grenade": 20,
+        "Intimidate": 10
+    },
+    "Army Trained": {
+        "Choices": 2,
+        "Dodge": 10,
+        "Energy Weapons": 20,
+        "Fighting": 10,
+        "Grenade": 10,
+        "Heavy Weapons": 10,
+        "Kinetic Weapons": 20,
+        "Medicine": 10,
+        "Vehicle Weapons": 10
+    },
+    "Borderland Homeworld": {
+        "Choices": 1,
+        "Dodge": 10,
+        "Fighting": 10,
+        "Kinetic Weapons": 10,
+        "Repair": 10,
+        "Survival": 10
+    },
+    "Born on the Streets": {
+        "Choices": 1,
+        "Stealth": 10,
+        "Streetwise": 20,
+        "Enhancement": "Tough"
+    },
+    "Boxer": {
+        "Choices": 1,
+        "Fighting": 20,
+        "Parry": 10,
+        "Enhancement": "Strong"
+    },
+    "Cheerleader": {
+        "Choices": 1,
+        "Athletics": 20,
+        "Charm": 10,
+        "Sleight of Hand": 10,
+        "Stealth": 10
+    },
+    "Child Actor": {
+        "Choices": 1,
+        "Bluff": 20,
+        "Diplomacy": 20,
+        "Melee Weapons": 10
+    },
+    "Community Youth Worker": {
+        "Choices": 1,
+        "Insight": 20,
+        "Kinetic Weapons": 10,
+        "Parry": 10,
+        "Streetwise": 10
+    },
+    "Computer Game Designer": {
+        "Choices": 1,
+        "Computer": 20,
+        "Spaceship Piloting": 10,
+        "Tactics": 10,
+        "Vehicle Piloting": 10
+    },
+    "Criminal Family": {
+        "Choices": 1,
+        "Bluff": 10,
+        "Charm": 10,
+        "Gambling": 10,
+        "Security": 10,
+        "Stealth": 10
+    },
+    "Cyborg": {
+        "Choices": 1,
+        "Start with 100000 credits worth of Cybernetics": null
+    },
+    "Docking Bay Operative": {
+        "Choices": 1,
+        "Navigation": 10,
+        "Planetary Knowledge": 10,
+        "Repair": 10,
+        "Security": 10,
+        "Trading": 10
+    },
+    "Engineer": {
+        "Choices": 1,
+        "Cyber": 10,
+        "Computer": 10,
+        "Energy Weapons": 10,
+        "Repair": 20
+    },
+    "Explorer Corp": {
+        "Choices": 1,
+        "Navigation": 20,
+        "Planetary Knowledge": 10,
+        "Survival": 10,
+        "Vehicle Piloting": 10
+    },
+    "Fighter Pilot": {
+        "Choices": 1,
+        "Spaceship Piloting": 10,
+        "Spaceship Weapons": 10,
+        "Systems": 20,
+        "Tactics": 10
+    },
+    "Freedom Fighter": {
+        "Choices": 1,
+        "Dodge": 10,
+        "Energy Weapons": 10,
+        "Grenade": 10,
+        "Stealth": 10,
+        "Vehicle Piloting": 10
+    },
+    "Frontier Trader": {
+        "Choices": 1,
+        "Bargain": 10,
+        "Dodge": 10,
+        "Kinetic Weapons": 10,
+        "Trading": 20
+    },
+    "Fuel Rat": {
+        "Choices": 1,
+        "Navigation": 20,
+        "Planetary Knowledge": 10,
+        "Spaceship Piloting": 10,
+        "Trading": 10
+    },
+    "Gene Mod Baby": {
+        "Choices": 1,
+        "Enhancement": ["Any", "Any"]
+    },
+    "Gym Freak": {
+        "Choices": 1,
+        "Athletics": 10,
+        "Enhancement": [
+            "Quick Runner",
+            "Strong"
+        ]
+    },
+    "Hacker": {
+        "Choices": 1,
+        "Computer": 20,
+        "Security": 10,
+        "Enhancement": ["Natural Genius,Computer"]
+    },
+    "High Tech Homeworld": {
+        "Choices": 1,
+        "Computer": 10,
+        "Cyber": 10,
+        "Energy Weapons": 10,
+        "Science": 10,
+        "Systems": 10
+    },
+    "Hoopy Casino Croupier": {
+        "Choices": 1,
+        "Gambling": 20,
+        "Perception": 10,
+        "Sleight of Hand": 20
+    },
+    "Lave Radio Host": {
+        "Choices": 1,
+        "Bluff": 20,
+        "Charm": 10,
+        "Insight": 20
+    },
+    "Martial Artist": {
+        "Choices": 2,
+        "Athletics": 20,
+        "Dodge": 20,
+        "Fighting": 20,
+        "Melee Weapons": 20,
+        "Parry": 20
+    },
+    "Mercenary": {
+        "Choices": 2,
+        "Dodge": 20,
+        "Fighting": 10,
+        "Heavy Weapons": 20,
+        "Kinetic Weapons": 10,
+        "Tactics": 10,
+        "Vehicle Weapons": 10,
+        "Enhancement": ["Tough"]
+    },
+    "Mining Engineer": {
+        "Choices": 1,
+        "Grenade": 10,
+        "Heavy Weapons": 20,
+        "Repair": 10,
+        "Systems": 10
+    },
+    "Minor Politician": {
+        "Choices": 1,
+        "Bargain": 10,
+        "Culture & Law": 10,
+        "Diplomacy": 10,
+        "Perception": 10,
+        "Tactics": 10
+    },
+    "Monk/Nun": {
+        "Choices": 1,
+        "Fighting": 10,
+        "Insight": 20,
+        "Medicine": 10,
+        "Stealth": 10
+    },
+    "Navy Trained": {
+        "Choices": 2,
+        "Dodge": 10,
+        "Energy Weapons": 10,
+        "Fighting": 10,
+        "Repair": 20,
+        "Security": 10,
+        "Spaceship Piloting": 10,
+        "Spaceship Weapons": 10,
+        "Systems": 20
+    },
+    "Officer": {
+        "Choices": 1,
+        "Diplomacy": 10,
+        "Intimidate": 10,
+        "Perception": 10,
+        "Tactics": 20,
+        "Requirement": "Army Trained or Navy Trained Background"
+    },
+    "Partner": {
+        "Choices": 1,
+        "Partner": true,
+        "Note": "Start with a partner"
+    },
+    "Petty Criminal": {
+        "Choices": 1,
+        "Fighting": 10,
+        "Kinetic Weapons": 10,
+        "Parry": 10,
+        "Sleight of Hand": 10,
+        "Streetwise": 10
+    },
+    "Pilot Trained (Free)": {
+        "Choices": 0,
+        "Spaceship Piloting": 20,
+        "Spaceship Weapons": 20,
+        "Systems": 10
+    },
+    "Police Officer": {
+        "Choices": 2,
+        "Culture & Law": 10,
+        "Diplomacy": 10,
+        "Dodge": 10,
+        "Energy Weapons": 20,
+        "Fighting": 10,
+        "Perception": 20,
+        "Spaceship Piloting": 10,
+        "Spaceship Weapons": 10
+    },
+    "Private Detective": {
+        "Choices": 1,
+        "Energy Weapons": 10,
+        "Insight": 10,
+        "Perception": 10,
+        "Security": 10,
+        "Stealth": 10
+    },
+    "Ran Away From Home": {
+        "Choices": 1,
+        "Dodge": 10,
+        "Perception": 10,
+        "Sleight of Hand": 10,
+        "Streetwise": 10,
+        "Survival": 10
+    },
+    "Scientist": {
+        "Choices": 1,
+        "Computer": 10,
+        "Science": 20,
+        "Enhancement": ["Natural Genius,Science"]
+    },
+    "Scout Leader": {
+        "Choices": 1,
+        "Athletics": 10,
+        "Charm": 10,
+        "Kinetic Weapons": 10,
+        "Navigation": 10,
+        "Survival": 10
+    },
+    "Second Hand Spaceship Dealer": {
+        "Choices": 1,
+        "Bargain": 20,
+        "Planetary Knowledge": 10,
+        "Repair": 10,
+        "Trading": 10
+    },
+    "Secret Agent": {
+        "Choices": 2,
+        "Bluff": 10,
+        "Charm": 10,
+        "Computer": 10,
+        "Dodge": 10,
+        "Energy Weapons": 10,
+        "Insight": 10,
+        "Security": 20,
+        "Stealth": 20
+    },
+    "Self-Taught": {
+        "Choices": 1,
+        "Any 2": "10",
+        "Enhancement": ["Any"]
+    },
+    "Ship Hand": {
+        "Choices": 1,
+        "Kinetic Weapons": 10,
+        "Repair": 10,
+        "Spaceship Weapons": 10,
+        "Systems": 20
+    },
+    "Sports College": {
+        "Choices": 1,
+        "Athletics": 20,
+        "Dodge": 10,
+        "Enhancement": ["Quick Runner"]
+    },
+    "Stockbroker": {
+        "Choices": 1,
+        "Bluff": 10,
+        "Fighting": 10,
+        "Intimidate": 10,
+        "Trading": 20
+    },
+    "Teacher": {
+        "Choices": 1,
+        "Culture & Law": 10,
+        "Diplomacy": 10,
+        "Intimidate": 10,
+        "Perception": 10,
+        "Science": 10
+    },
+    "Trained Doctor": {
+        "Choices": 1,
+        "Cyber": 20,
+        "Medicine": 20,
+        "Science": 10
+    },
+    "Treasure Hunter": {
+        "Choices": 1,
+        "Fighting": 10,
+        "Kinetic Weapons": 10,
+        "Navigation": 10,
+        "Planetary Knowledge": 10,
+        "Vehicle Piloting": 10
+    },
+    "Trucker": {
+        "Choices": 1,
+        "Trading": 10,
+        "Vehicle Piloting": 10,
+        "Vehicle Weapons": 10,
+        "Enhancement": ["Tough"]
+    },
+    "University Graduate": {
+        "Choices": 1,
+        "One Intelligence Skill": "+20",
+        "Two Intelligence Skills": "+10"
+    },
+    "Vehicle Nut": {
+        "Choices": 1,
+        "Repair": 10,
+        "Vehicle Piloting": 20,
+        "Vehicle Weapons": 20
+    },
+    "Wise Guy": {
+        "Choices": 2,
+        "Dodge": 10,
+        "Gambling": 10,
+        "Heavy Weapons": 10,
+        "Kinetic Weapons": 10,
+        "Medicine": 10,
+        "Melee Weapons": 10,
+        "Streetwise": 20,
+        "Tactics": 10,
+        "Vehicle Weapons": 10
+    },
+    "Wage Slave": {
+        "Choices": 1,
+        "Bargain": 10,
+        "Computer": 10,
+        "Culture & Law": 10,
+        "Diplomacy": 10,
+        "Security": 10
+    },
+    "Insurgent": {
+        "Choices": 1,
+        "Bluff": 20,
+        "Fighting": 10,
+        "Security": 10,
+        "Stealth": 10
+    },
+    "Corporate Security": {
+        "Choices": 1,
+        "Dodge": 10,
+        "Energy Weapons": 10,
+        "Fighting": 10,
+        "Security": 20
+    },
+    "Big Game Hunter": {
+        "Choices": 1,
+        "Kinetic Weapons": 10,
+        "Stealth": 20,
+        "Survival": 20
+    },
+    "Castaway": {
+        "Choices": 1,
+        "Survival": 20,
+        "Melee": 10,
+        "Enhancement": ["Survivalist"]
+    },
+    "Xenobiologist": {
+        "Choices": 1,
+        "Science": 20,
+        "Medicine": 20,
+        "Planetary Systems": 10
+    },
+    "Disgraced Banker": {
+        "Choices": 1,
+        "Dodge": 10,
+        "Energy Weapons": 10,
+        "Tactics": 10,
+        "Trading": 20
+    },
+    "Labour Slave": {
+        "Choices": 1,
+        "Fighting": 10,
+        "Enhancement": [
+            "Strong",
+            "Tough"
+        ]
+    },
+    "Pit Fighter": {
+        "Choices": 1,
+        "Bluff": 10,
+        "Charm": 20,
+        "Fighting": 10,
+        "Parry": 10
+    },
+    "Smuggler": {
+        "Choices": 1,
+        "Bargain": 10,
+        "Spaceship Piloting": 10,
+        "Systems": 10,
+        "Tactics": 10,
+        "Vehicle Piloting": 10
+    },
+    "Federal Reservist": {
+        "Choices": 1,
+        "Dodge": 10,
+        "Fighting": 10,
+        "Intimidate": 10,
+        "Kinetic Weapons": 10,
+        "Stealth": 10
+    },
+    "Slave Soldier":
+    {
+        "Choices": 1,
+        "Bluff": 10,
+        "Charm": 10,
+        "Dodge": 10,
+        "Energy Weapons": 10,
+        "Vehicle Weapons": 10
+    },
+    "Military Courier": {
+        "Choices": 1,
+        "Bluff": 10,
+        "Navigation": 10,
+        "Spaceship Piloting": 10,
+        "Vehicle Piloting": 10,
+        "Vehicle Weapons": 10
+    },
+    "Drone Controller": {
+        "Choices": 1,
+        "Cyber": 10,
+        "Computer": 10,
+        "Drones": ["T-90 Patrol Drone"],
+        "Note": "Start with T-90 Patrol Drone"
+    }
+}

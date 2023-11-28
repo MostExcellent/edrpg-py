@@ -1,0 +1,97 @@
+
+{
+    "Name": "pc_base",
+    "Rank": "Harmless",
+    "Rank Points": 0,
+    "Gender": "Any",
+    "Age": 25,
+    "Height": 170,
+    "Weight": 70,
+
+    "Karma": 10,
+    "Endurance": 20,
+
+    "Credits": 1000,
+
+    "Backgrounds": ["Pilot Trained"],
+    "Enhancements": [],
+    "Drones": [],
+    "Partner": null,
+
+    "Ranged Weapons": [],
+    "Close Combat": ["Fighting"],
+
+    "Ship": null,
+    "Ships": [],
+
+    "Weapons": {
+        "Primary": null,
+        "Secondary": null,
+        "C/G 1": null,
+        "C/G 2": null,
+        "C/G 3": null,
+        "C/G 4": null,
+        "G 5": null
+    },
+
+    "Clothing": {
+        "Flight Suit": true,
+        "Remlok": true,
+        "Magboots": true,
+        "Comms Unit": true
+    },
+
+    "Equipment in pack": [],
+    "Equipment in ship": ["Spacesuit", "Medpack (full)", "Spaceship Repair Kit (Basic)"],
+
+    "Skills": {
+        "Combat": {
+            "Dodge": 10,
+            "Energy Weapons": 10,
+            "Fighting": 10,
+            "Grenade": 10,
+            "Heavy Weapons": 10,
+            "Kinetic Weapons": 10,
+            "Melee Weapons": 10,
+            "Parry": 10
+        },
+        "Intelligence": {
+            "Computer": 10,
+            "Culture and Law": 10,
+            "Cyber": 10,
+            "Medicine": 10,
+            "Planetary Knowledge": 10,
+            "Science": 10,
+            "Tactics": 10,
+            "Trading": 10
+        },
+        "Social": {
+            "Bargain": 10,
+            "Bluff": 10,
+            "Charm": 10,
+            "Diplomacy": 10,
+            "Gambling": 10,
+            "Insight": 10,
+            "Intimidate": 10,
+            "Streetwise": 10
+        },
+        "Vehicle": {
+            "Navigation": 10,
+            "Repair": 10,
+            "Spaceship Piloting": 10,
+            "Spaceship Weapons": 10,
+            "Systems": 10,
+            "Vehicle Piloting": 10,
+            "Vehicle Weapons": 10
+        },
+        "Espionage": {
+            "Athletics": 10,
+            "Perception": 10,
+            "Security": 10,
+            "Sleight of Hand": 10,
+            "Stealth": 10,
+            "Survival": 10
+        }
+    },
+    "Notes": []
+}

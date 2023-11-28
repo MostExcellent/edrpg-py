@@ -1,0 +1,318 @@
+{
+    "Auto Pistol": {
+        "Types": ["Autopistol", "Kinetic", "Basic"],
+        "Handed": 1,
+        "Range": {
+            "Short": [6, 5],
+            "Medium": [50, 8],
+            "Long": [100, 14]
+        },
+        "Damage": "1D10",
+        "Special": {
+            "Burst": "2D10"
+        },
+        "Ammo": 3,
+        "Notes": "One Handed, Burst (2D10)",
+        "Cost": 4
+    },
+    "Laser Pistol": {
+        "Types": ["Laser Pistol", "Energy", "Basic"],
+        "Handed": 1,
+        "Range": {
+            "Short": [10, 4],
+            "Medium": [80, 7],
+            "Long": [120, 11]
+        },
+        "Damage": 8,
+        "Special": null,
+        "Ammo": null,
+        "Notes": "One Handed",
+        "Cost": 3
+    },
+    "Sub Machinegun": {
+        "Types": ["SMG", "Kinetic", "Basic"],
+        "Handed": 2,
+        "Range": {
+            "Short": [10, 5],
+            "Medium": [60, 8],
+            "Long": [120, 14]
+        },
+        "Damage": "1D10",
+        "Special": {
+            "Burst": "3D10"
+        },
+        "Ammo": 4,
+        "Notes": "Burst (3D10)",
+        "Cost": 9
+    },
+    "Assault Beamer": {
+        "Types": ["Assault Beamer", "Energy", "Basic"],
+        "Handed": 2,
+        "Range": {
+            "Short": [12, 4],
+            "Medium": [70, 7],
+            "Long": [200, 10]
+        },
+        "Damage": 8,
+        "Special": {
+            "Burst": "20",
+            "Destroy Cover": true,
+            "Divide Fire": true
+        },
+        "Ammo": null,
+        "Notes": "Burst (20), Destroy Cover, Divide Fire",
+        "Cost": 50
+    },
+    "Shotgun": {
+        "Types": ["Shotgun", "Kinetic", "Basic"],
+        "Handed": 2,
+        "Range": {
+            "Short": [6, 3],
+            "Medium": [12, 7],
+            "Long": [50, 12]
+        },
+        "Damage": {
+            "Short": "3D10",
+            "Medium": "2D10",
+            "Long": "1D10"
+        },
+        "Special": null,
+        "Ammo": 6,
+        "Notes": "Damage is 2D10 at Medium Range, 1D10 at Long Range",
+        "Cost": 5
+    },
+    "Assault Rifle": {
+        "Types": ["Assault Rifle", "Kinetic", "Basic"],
+        "Handed": 2,
+        "Range": {
+            "Short": [16, 6],
+            "Medium": [100, 7],
+            "Long": [400, 10]
+        },
+        "Damage": "1D10",
+        "Special": {
+            "Burst": "3D10"
+        },
+        "Ammo": 4,
+        "Notes": "Burst (3D10)",
+        "Cost": 15
+    },
+    "Laser Rifle": {
+        "Types": ["Laser Rifle", "Energy", "Basic"],
+        "Handed": 2,
+        "Range": {
+            "Short": [20, 4],
+            "Medium": [150, 6],
+            "Long": [500, 9]
+        },
+        "Damage": 15,
+        "Special": null,
+        "Ammo": null,
+        "Notes": "Two Handed",
+        "Cost": 40
+    },
+    "Chain Gun": {
+        "Types": ["Chain Gun", "Kinetic", "Heavy", "Basic"],
+        "Handed": 2,
+        "Range": {
+            "Short": [30, 5],
+            "Medium": [60, 8],
+            "Long": [180, 14]
+        },
+        "Damage": "2D10",
+        "Special": {
+            "Heavy Burst": "6D10",
+            "Destroy Cover": true,
+            "Divide Fire": true
+        },
+        "Ammo": 4,
+        "Notes": "Heavy Burst (6D10), Destroy Cover, Divide Fire",
+        "Cost": 1000
+    },
+    "NG75 Autopistol": {
+        "Types": ["Autopistol", "Kinetic", "Rare"],
+        "Handed": 1,
+        "Range": {
+            "Short": [6, 5],
+            "Medium": [50, 8],
+            "Long": [100, 14]
+        },
+        "Damage": "1D10",
+        "Special": {
+            "Burst": "3D10"
+        },
+        "Ammo": 2,
+        "Notes": "One Handed, Burst (3D10)",
+        "Cost": 42000
+    },
+    "Micronite Doubleclip Sentinel": {
+        "Types": ["Autopistol", "Kinetic", "Rare"],
+        "Handed": 1,
+        "Range": {
+            "Short": [6, 5],
+            "Medium": [50, 8],
+            "Long": [100, 14]
+        },
+        "Damage": "1D10",
+        "Special": {
+            "Burst": "2D10",
+            "Skill": {
+                "Kinetic Weapons": 5
+            }
+        },
+        "Ammo": 6,
+        "Notes": "One Handed, Burst (2D10), +5 to Kinetic Weapons score",
+        "Cost": 50000
+    },
+    "Gold & Perry ‘Watcher’ Autopistol": {
+        "Types": ["Autopistol", "Kinetic", "Rare"],
+        "Handed": 1,
+        "Range": {
+            "Short": [10, 5],
+            "Medium": [60, 8],
+            "Long": [120, 14]
+        },
+        "Damage": "1D10",
+        "Special": {
+            "Burst": "2D10"
+        },
+        "Ammo": 3,
+        "Notes": "One Handed, Burst (2D10)",
+        "Cost": 65000
+    },
+    "GTN 195 Autopistol": {
+        "Types": ["Autopistol", "Kinetic", "Rare"],
+        "Handed": 1,
+        "Range": {
+            "Short": [8, 5],
+            "Medium": [56, 8],
+            "Long": [110, 14]
+        },
+        "Damage": "2D10",
+        "Special": {
+            "Burst": "2D10"
+        },
+        "Ammo": 3,
+        "Notes": "One Handed, Burst (2D10)",
+        "Cost": 225000
+    },
+    "Imperial ‘Stimmer’ Autopistol": {
+        "Types": ["Autopistol", "Kinetic", "Rare"],
+        "Handed": 1,
+        "Range": {
+            "Short": [6, 5],
+            "Medium": [50, 8],
+            "Long": [100, 14]
+        },
+        "Damage": "1D10",
+        "Special": {
+            "Burst": "2D10",
+            "Skill": {
+                "Kinetic Weapons": 5
+            },
+            "Stim": [0, 80]
+        },
+        "Ammo": 3,
+        "Notes": "One Handed, Burst (2D10), +5 to Kinetic Weapons score, Injects Combat Stims (80%) on 0 Endurance",
+        "Cost": 400500
+    },
+    "Asellus Deflector Pistol": {
+        "Types": ["Autopistol", "Kinetic", "Rare"],
+        "Handed": 1,
+        "Range": {
+            "Short": [6, 5],
+            "Medium": [50, 8],
+            "Long": [100, 14]
+        },
+        "Damage": "1D10",
+        "Special": {
+            "Burst": "2D10",
+            "Skill": {
+                "Kinetic Weapons": 10
+            },
+            "Absorb": {
+                "Kinetic": 3,
+                "Energy": 3
+            }
+        },
+        "Ammo": 3,
+        "Notes": "One Handed, Burst (2D10), +10 to Kinetic Weapons score, Absorb 3 Kinetic and Energy damage",
+        "Cost": 1005000
+    },
+    "LX10 Energised Autopistol": {
+        "Types": ["Autopistol", "Kinetic", "Rare"],
+        "Handed": 1,
+        "Range": {
+            "Short": [10, 5],
+            "Medium": [60, 8],
+            "Long": [120, 14]
+        },
+        "Damage": "2D10",
+        "Special": {
+            "Burst": "2D10",
+            "Skill": {
+                "Kinetic Weapons": 5
+            },
+            "Damage Type": "Energy"
+        },
+        "Ammo": 4,
+        "Notes": "One Handed, Burst (2D10), +5 to Kinetic Weapons score, damage counts as Energy Weapon",
+        "Cost": 1400000
+    },
+    "Corvus Inc Devastation Pistol": {
+        "Types": ["Autopistol", "Kinetic", "Rare"],
+        "Handed": 1,
+        "Range": {
+            "Short": [8, 5],
+            "Medium": [56, 8],
+            "Long": [110, 14]
+        },
+        "Damage": "1D10",
+        "Special": {
+            "Burst": "4D10",
+            "Skill": {
+                "Kinetic Weapons": 15
+            }
+        },
+        "Ammo": 4,
+        "Notes": "One Handed, Burst (4D10), +15 to Kinetic Weapons score",
+        "Cost": 2900000
+    },
+    "Delman Autopistol": {
+        "Types": ["Autopistol", "Kinetic", "Rare"],
+        "Handed": 1,
+        "Range": {
+            "Short": [10, 5],
+            "Medium": [60, 8],
+            "Long": [120, 14]
+        },
+        "Damage": "3D10",
+        "Special": {
+            "Burst": "2D10",
+            "Skill": {
+                "Kinetic Weapons": 20
+            }
+        },
+        "Ammo": 2,
+        "Notes": "One Handed, Burst (2D10), +20 to Kinetic Weapons score",
+        "Cost": 5000000
+    },
+    "Hyperion Laser Pistol": {
+        "Types": ["Laser Pistol", "Energy"],
+        "Handed": 1,
+        "Range": {
+            "Short": [10, 4],
+            "Medium": [80, 7],
+            "Long": [120, 11]
+        },
+        "Damage": 8,
+        "Special": {
+            "Skill": {
+                "Energy Weapons": 5
+            }
+        },
+        "Ammo": null,
+        "Notes": "One Handed",
+        "Cost": 50000
+    }
+}

@@ -1,0 +1,45 @@
+Finish weapons after Shotgun
+Finish Rare Weapons
+Implement underslung grenade launcher (SMG)
+implement partner/drones in character creation
+implement enhancements
+implement karma abilities
+implement drones
+fill in ground enemies
+fill in ship enemies
+weapons tables
+other tables
+system generator
+weapons from expansions
+specials list/dict?
+stars orbiting stars
+
+note:
+
+if outer table is a string, refer to that star's table
+handle ring value in script
+
+for clothes:
+true = Worn
+
+during character creation:
+choose name, height, weight, etc.
+add weapons, choice of comm, and ship
+add ship to ships
+add kinetic clips per weapons
+max c/g 4 + 1g
+set up carried weapons (mandatory)
+
+ship sheets are for base, skills added on after
+
+Submachinegun type abbreviated to SMG
+
+Range based damage: if damage is dict
+
+specials so far:
+Burst: N or ND10
+Heavy Burst, N or ND10
+Skill
+Armor #(absorb): {Type:n,...}
+Stim: [threshold, %]
+Damage Type: Type

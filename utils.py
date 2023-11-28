@@ -45,6 +45,9 @@ class DieTable(Table):
     def roll(self, n=1):
         results = self.die.roll(n)
         return [self.table.get(result, result) for result in results]
+    
+    def get_result(self, result):
+        return self.table.get(result, result)
 
 class ListTable(Table):
     def __init__(self, table):
@@ -52,3 +55,6 @@ class ListTable(Table):
 
     def roll(self, n=1):
         return random.choices(self.table, k=n)
+    
+    def get_result(self, result):
+        return self.table[result]

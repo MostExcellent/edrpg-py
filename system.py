@@ -156,7 +156,7 @@ class System:
             if self.society not in invalid_allegiance[allegiance]:
                 self.allegiance = allegiance
                 allegiance_done = True
-    
+
 class Star:
     def __init__(self, star_type, inhabited = True):
         self.star_type = star_type
@@ -247,10 +247,14 @@ class OrbitingStar(Star):
     def generate_rings(self):
         self.rings = gas_giant_rings_table.roll()[0]
 
-class Planet:
-    def __init__(self, planet_type, distance, system_inhabited):
-        self.planet_type = planet_type
+class OrbitingBody:
+    def __init__(self, distance):
         self.distance = distance
+
+class Planet(OrbitingBody):
+    def __init__(self, planet_type, distance, system_inhabited):
+        super().__init__(distance)
+        self.planet_type = planet_type
         self.inhabited = self.determine_inhabited(system_inhabited)
         self.rings = False
         self.moons = []  # List of Moon objects
@@ -265,50 +269,42 @@ class Planet:
             return random.random() < probability
         return False
 
-    def generate_all(self):
-        self.generate_moons()
-        gas_giant = self.planet_type.startswith('Gas Giant')
-        if gas_giant:
-            self.rings = gas_giant_rings_table.roll()[0]
-            if self.rings == 'Metallic':
-                self.inhabited = random.random() < inhabited_probability['Metallic']
-        if self.inhabited:
-            # Ensure at least one structure (station, outpost, or settlement)
-            while not (self.stations or self.outposts or self.settlements):
-                self.generate_stations()
-                self.generate_outposts()
-                if not self.planet_type.startswith('Gas Giant'):
-                    self.generate_settlements()
-        # if planet type starts with gas giant, generate rings
-    
+    def generate_structures(self, structure_type):
+        table = {
+            'station': (space_stations_table, Station),
+            'outpost': (space_outposts_table, Outpost),
+            'settlement': (ground_settlements_table, Settlement)
+        }
+        num_structures = table[structure_type][0].roll()[0]
+        for _ in range(num_structures):
+            new_structure = table[structure_type][1]()
+            getattr(self, structure_type + 's').append(new_structure)
+
     def generate_moons(self):
         if self.planet_type.startswith('Gas Giant'):
             num_moons = gas_giant_moons_table.roll()[0]
         else:
             num_moons = moons_table.roll()[0]
         for _ in range(num_moons):
-            moon_type = moon_type_table.roll()[0]
-            new_moon = Moon(moon_type)
+            new_moon = Moon(moon_type_table.roll()[0])
             self.moons.append(new_moon)
 
-    def generate_stations(self):
-        self._generate_structures(space_stations_table, Station, self.stations)
+    def generate_all(self):
+        self.generate_moons()
+        if self.planet_type.startswith('Gas Giant'):
+            self.rings = gas_giant_rings_table.roll()[0]
+            if self.rings == 'Metallic' and not self.inhabited:
+                self.inhabited = random.random() < inhabited_probability['Metallic']
 
-    def generate_outposts(self):
-        self._generate_structures(space_outposts_table, Outpost, self.outposts)
+        if self.inhabited:
+            for structure_type in ['station', 'outpost']:
+                self.generate_structures(structure_type)
+            if not self.planet_type.startswith('Gas Giant'):
+                self.generate_structures('settlement')
 
-    def generate_settlements(self):
-        self._generate_structures(ground_settlements_table, Settlement, self.settlements)
-
-    def _generate_structures(self, table, structure_class, collection):
-        num_structures = table.roll()[0]
-        for _ in range(num_structures):
-            new_structure = structure_class()
-            collection.append(new_structure)
-
-class AsteroidBelt:
+class AsteroidBelt(OrbitingBody):
     def __init__(self, distance):
-        self.distance = distance
+        super().__init__(distance)
 
 class Moon:
     def __init__(self, moon_type):
@@ -404,8 +400,7 @@ if __name__ == "__main__":
     # Generate a solar system
     solar_system = System()
     solar_system.generate_system()
-    #for key in inner_planet_tables:
-    #    print(inner_planet_tables[key].table)
+    # The following is to force the generation of a system with an Earth-like World
     # elw = False
     # while elw == False:
     #     solar_system = System()
@@ -413,11 +408,8 @@ if __name__ == "__main__":
     #     for star in solar_system.stars:
     #         for planet in star.planets:
     #             if planet.planet_type == "Water World" or planet.planet_type == "Earth-like World" or planet.planet_type == "Ammonia World":
-    #             # if not gas giant or ice world
-    #             ##if not planet.planet_type.startswith("Gas Giant") and not planet.planet_type.startswith("Ice World"):
     #                 elw = True
     #                 break
 
     # Print the system summary
     print_system_summary(solar_system)
-    #print(government_table.roll())

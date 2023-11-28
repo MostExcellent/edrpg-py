@@ -169,39 +169,38 @@ class Star:
             luminosity = calculate_luminosity(self.size, star_information[self.star_type]['alpha'])
             self.habitable_zone = calculate_habitable_zone(luminosity)
     
-    def _generate_planets(self, min_distance, max_distance, table = "Inner"):
+    def generate_orbiting_objects(self, min_distance, max_distance, table = "Inner"):
         no_planet_count = 0
         distance = min_distance
         table = inner_planet_tables[self.star_type] if table == "Inner" else outer_planet_tables[self.star_type]
         while distance <= max_distance:
             planet_type = table.roll()[0]
             if planet_type:
-                if planet_type == "Star":
-                    new_star_type = orbiting_stars_table.roll()[0]
-                    if new_star_type == "Main Sequence":
-                        new_star_type = roll_star_type()
-                    new_star = OrbitingStar(new_star_type)
-                    new_star.generate_size()
-                    if new_star.size < self.size:
-                        self.orbiting_stars.append(new_star, distance)
-                elif planet_type == "Asteroid Belt":
-                    new_asteroid_belt = AsteroidBelt(distance)
-                    self.asteroid_belts.append(new_asteroid_belt)
-                else:
-                    if not self.is_in_habitable_zone(distance) and planet_type in non_habitable_map.keys():
-                        planet_type = non_habitable_map[planet_type]
-                    #else:
-                    #    print("Habitable planet found")
-                    #    print(planet_type)
-                    new_planet = Planet(planet_type, distance, self.inhabited)
-                # Additional planet generation logic here
-                    self.planets.append(new_planet)
+                self.generate_orbiting_object(planet_type, distance)
             else:
                 no_planet_count += 1
                 if no_planet_count == 2:
                     break
             distance += 100
     
+    def generate_orbiting_object(self, object_type, distance):
+        if object_type == "Star":
+            new_star_type = orbiting_stars_table.roll()[0]
+            if new_star_type == "Main Sequence":
+                new_star_type = roll_star_type()
+            new_star = OrbitingStar(new_star_type, distance)
+            new_star.generate_size()
+            if new_star.size < self.size:
+                self.orbiting_stars.append(new_star)
+        elif object_type == "Asteroid Belt":
+            new_asteroid_belt = AsteroidBelt(distance)
+            self.asteroid_belts.append(new_asteroid_belt)
+        else:
+            if object_type in non_habitable_map.keys() and not self.is_in_habitable_zone(distance):
+                object_type = non_habitable_map[object_type]
+            new_planet = Planet(object_type, distance, self.inhabited)
+            self.planets.append(new_planet)
+
     def ensure_inhabited_planet(self):
         if self.inhabited and not any(planet.inhabited for planet in self.planets):
             while not any(planet.inhabited for planet in self.planets):
@@ -213,14 +212,14 @@ class Star:
         outer_max_distance = 10000 if not self.star_type in rare_table.table else 20000
         
         # Generate inner and outer planets
-        self._generate_planets(100, inner_max_distance, "Inner")
-        self._generate_planets(outer_min_distance, outer_max_distance, "Outer")
+        self.generate_orbiting_objects(100, inner_max_distance, "Inner")
+        self.generate_orbiting_objects(outer_min_distance, outer_max_distance, "Outer")
 
         # Ensure at least one planet for inhabited systems
         if self.inhabited and not self.planets:
             while not self.planets:
-                self._generate_planets(100, inner_max_distance)
-                self._generate_planets(outer_min_distance, outer_max_distance)
+                self.generate_orbiting_objects(100, inner_max_distance)
+                self.generate_orbiting_objects(outer_min_distance, outer_max_distance)
     
     def is_in_habitable_zone(self, distance):
         if self.habitable_zone:
